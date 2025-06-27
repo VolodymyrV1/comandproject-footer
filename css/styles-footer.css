@@ -96,28 +96,31 @@ img {
   margin-bottom: 48px;
 }
 
-.footer-logo {
-  transition: background-color 250ms, border-radius 250ms, fill 250ms;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  background-color: #030a06;
-  border-radius: 5px;
-}
-
-.footer-logo:hover .footer-logo-icon {
-  fill: #fff;
-}
-
-.footer-logo:focus .footer-logo-icon {
-  fill: #fff;
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 48px;
 }
 
 .footer-logo-link {
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  transition: background-color 250ms, border-radius 250ms, fill 250ms;
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus {
+  background-color: #030a06;
+  border-radius: 5px;
+}
+
+.footer-logo-link:hover .footer-logo-icon {
+  fill: #fff;
+}
+
+.footer-logo-link:focus .footer-logo-icon {
+  fill: #fff;
 }
 
 .footer-nav-list {
@@ -202,3 +205,94 @@ img {
   font-family: "Fira Sans", sans-serif;
   font-size: 14px;
 }
+
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .footer-wrap {
+    row-gap: 32px;
+    margin-bottom: 24px;
+  }
+  .footer-nav {
+    row-gap: 32px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+
+  .footer-logo-icon {
+    width: 160px;
+    height: 60px;
+  }
+
+  .footer-icon-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-wrap-adress {
+    row-gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+
+  .footer-address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .footer-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-nav-link {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .footer-logo-link {
+    display: block;
+    margin-right: 212px;
+  }
+
+  .footer-logo-icon {
+    width: 159px;
+  }
+
+  .footer-icon-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
