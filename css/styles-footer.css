@@ -81,7 +81,7 @@ img {
 /* =====FOOTER===== */
 
 .footer {
-  background: #75d281;
+  background-color: #75d281;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -206,7 +206,6 @@ img {
   font-size: 14px;
 }
 
-
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 64px;
@@ -295,4 +294,3 @@ img {
     height: 24px;
   }
 }
-
